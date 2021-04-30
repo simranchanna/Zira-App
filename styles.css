@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.navbar{
+    height: 12vh;
+    background-color: #1cc5dc;
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+.ticket-container{
+    min-height: 88vh;
+    background-color: #f4f9f4;
+    padding: 3rem;
+}
+.filter-container,
+.add-delete-container{
+    height: 8vh;
+    margin-top: 2vh;
+    margin-left: 8vw;
+    border-radius: 3px;
+    background-color: #00adb5;
+}
+.filter-container{
+    width: 20vw;
+    display: flex;
+}
+.filter{
+    height: 100%;
+    width: 25%;
+    display: flex;
+}
+.btn{
+    display: block;
+    width: 40%;
+    height: 40%;
+    border-radius: 3px;
+    margin: auto;
+    border: 2px solid black;
+}
+.pink{
+    background-color: pink;
+}
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+}
+.green{
+    background-color: #29bb89;
+}
+.selected-color{
+    background-color: #aad8d3;
+}
+.filter:hover{
+    background-color: #aad8d3;
+    cursor: pointer;
+}
+.add-delete-container{
+    width: 10vw;
+    display: flex;
+}
+.add, .delete{
+    height: 100%;
+    width: 50%;
+    display: flex;
+}
+.action-btn{
+    display: block;
+    width: 40%;
+    height: 40%;
+    margin-top: calc(8vh * 0.3);
+    margin-left: calc(5vw * 0.3);
+    border-radius: 3px;
+    padding-left: 4%;
+    background-color: #fff;
+}
+.action-btn:hover{
+    cursor: pointer;
+}
+.modal{
+    box-shadow: 0px 0px 40px 5px gray;
+    position: absolute;
+    top: 15rem;
+    left: calc((100vw - 35rem) / 2);
+    height: 18rem;
+    width: 35rem;
+    background-color: #fff;
+    margin: auto;
+    display: flex;
+}
+.task-to-be-added{
+    height: 70%;
+    width: 70%;
+    padding: 3rem;
+    outline: none;
+    overflow: auto;
+}
+.priority-list{
+    display: flex;
+    flex-direction: column;
+    background-color: #1cc5dc;
+    height: 100%;
+    width: 30%;
+    justify-content: space-between;
+    padding: 3rem;
+}
+.modal-filter{
+    width: 100%;
+    height: 20%;
+    border: 2px solid black;
+}
+.modal-filter.active{
+    border: 4px solid black;
+}
+.modal-filter:hover {
+    cursor: pointer;
+}
+.ticket{
+    height: 10rem;
+    width: 16rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0px 0px 5px 1px gray;
+}
+.ticket.active{
+    opacity: 0.5;
+    border: 3px solid black;
+}
+.ticket-color{
+    height: 6%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.ticket-id{
+    height: 15%;
+    width: 100%;
+    padding: 3%;
+    color: gray;
+}
+.task {
+    height: 79%;
+    width: 100%;
+    padding: 3%;
+}
