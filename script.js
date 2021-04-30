@@ -67,6 +67,8 @@ function addTicket(e){
                 allTasks.push({"id":id, "task": task, "priority": selectedPriority});
                 localStorage.setItem("allTasks", JSON.stringify(allTasks));
             }  
+            modalVisible = false;
+            $(".modal").slideUp();
             $(".selected-color").removeClass("selected-color");
             display(allTasks);
         } else{
